@@ -1,5 +1,12 @@
 # Customer Churn Prediction Platform
 
+## Overview
+
+A customer churn prediction service built as a small pipeline rather than a notebook. Raw rows are split into training and holdout sets, a scikit-learn GradientBoosting model is trained, holdout metrics are computed, and feature importances explain the result. `GET /model` and `POST /score` expose the trained model and score new rows.
+
+- **Built with:** Python, scikit-learn, pytest, GitHub Actions
+- **Scope:** Laptop proof with tests; it calls no hosted model and cluster apply stays false until a human approves.
+
 <!-- project-guide:start -->
 ## Project guide
 
